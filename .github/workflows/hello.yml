@@ -1,0 +1,13 @@
+name: Hello World Workflow
+
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodingizni clone qilish
+        uses: actions/checkout@v3
+
+      - name: Hello chiqish
+        run: echo "Salom, DevOpschilar!"
